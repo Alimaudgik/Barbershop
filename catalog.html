@@ -31,77 +31,130 @@
             <section>
                 <h2 class="hidden">Фильтр товаров</h2>
                 <!--Здесь будет форма-->
+                <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Baxter-of-California" id="filter-Baxter-of-California"><label for="Baxter of California">Baxter of California</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Mr-Natty" id="filter-Mr-Natty"><label for="filter-Mr-Natty">Mr Natty</label>                                
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Suavecito" id="filter-Suavecito"><label for="filter-Suavecito">Suavecito</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Malin-Goet" id="filter-Malin-Goetz"><label for="filter-Malin-Goetz">Malin-Goetz</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Murrays" id="filter-Murrays"><label for="filter-Murrays">Murray`s</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="American-Crew" id="filter-American-Crew"><label for="filter-American-Crew">American Crew</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Группа товаров:</legend>
+                        <ul>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" name="product-group" value="shaving" type="radio" id="shave"><label for="shave">Бритвенные принадлежности</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" name="product-group" value="hair-care" type="radio" id="hair-care"><label for="hair-care">Средство для ухода</label>        
+                            </li>
+                            <li>
+                                <input class="visually-hidden filter-input filter-input-radio" name="product-group" value="accessories" type="radio" id="accessories"><label for="accessories">Аксессуары</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button">Показать</button>
+
+                </form>
             </section>
             <section class="catalog">
                 <h2 class="hidden">Список средств для ухода</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Набор для путешествий</span><span>"Baxtor"</span></a>
+                            <span>Набор для путешествий</span><span>"Baxtor"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-1.jpg" alt="Набор для путешествий Baxtor" width="220" height="165"></a>
+                            <img src="img/product-1.jpg" alt="Набор для путешествий Baxtor" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>2 900 &#8381</b>
                         <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Увлажняющий кондиционер</span><span>"Baxtor"</span></a>
+                            <span>Увлажняющий кондиционер</span><span>"Baxtor"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-2.jpg" alt="Увлажняющий кондиционер Baxtor" width="220" height="165"></a>
+                            <img src="img/product-2.jpg" alt="Увлажняющий кондиционер Baxtor" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>750 &#8381</b>
                         <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Гель для волос</span><span>"Suavesito"</span></a>
+                            <span>Гель для волос</span><span>"Suavesito"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-3.jpg" alt="Гель для волос Suavesito" width="220" height="165"></a>
+                            <img src="img/product-3.jpg" alt="Гель для волос Suavesito" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>290 &#8381</b>
                         <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Глина для волос</span><span>"America"</span></a>
+                            <span>Глина для волос</span><span>"America"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-4.jpg" alt="Глина для волос America" width="220" height="165"></a>
+                            <img src="img/product-4.jpg" alt="Глина для волос America" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>500 &#8381</b>
                         <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Гель для волос</span><span>"America"</span></a>
+                            <span>Гель для волос</span><span>"America"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-5.jpg" alt="Гель для волос America" width="220" height="165"></a>
+                            <img src="img/product-5.jpg" alt="Гель для волос America" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>350 &#8381</b>
                         <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                     <li class="catalog-item">
+                        <a href="catalog-item.html">
                         <h3>
-                            <a href="catalog-item.html"><span>Гель для волос</span><span>"America"</span></a>
+                            <span>Гель для волос</span><span>"America"</span>
                         </h3>
                         <p>
-                            <a href="catalog-item.html"><img src="img/product-6.jpg" alt="Гель для волос America" width="220" height="165"></a>
+                            <img src="img/product-6.jpg" alt="Гель для волос America" width="220" height="165">
                         </p>
+                        </a>
                         <p class="catalog-item-price">
                         <b>3 900 &#8381</b>
                         <a class="button" href="#">Купить</a>
