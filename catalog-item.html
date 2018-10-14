@@ -9,9 +9,10 @@
     </head>
     
 <body class="inner-page">
+
         <header class="main-header">
             <nav class="main-navigation">
-                <a href="index.html" class="logo-link"><img src="img/logo-in.svg" width="111" height="24" alt="Лого барбершопа"></a>
+                <a href="index.html" class="main-header-logo"><img src="img/logo-in.svg" width="111" height="24" alt="Лого барбершопа"></a>
                 <ul class="site-navigation">
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="news.html">Новости</a></li>
@@ -24,6 +25,7 @@
                 </ul>
             </nav>
         </header>
+        
         <main class="container">
             <h1 class="page-title">Набор для путешествий "Baxtor"</h1>
             <ul class="breadcrumbs">
@@ -31,10 +33,11 @@
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="#"></a>Средство для ухода</li>
                 <li class="breadcrumbs-current">Набор для путешествий "Baxtor"</li>
-            </ul>    
-                <section class="products-photo">
+            </ul>
+            <div class="catalog-columns">    
+                <section class="product-photo">
                     <h2 class="visual-hidden">Изображение товара</h2>
-                    <p class="products-photo-full">
+                    <p class="product-photo-full">
                         <img src="img/products-big.jpg" width="460" height="498" alt="Фото всего набора">
                     </p>
                     <ul class="product-photo-preveiw">
@@ -43,13 +46,13 @@
                         <li><img src="img/photo-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
                     </ul>   
                 </section>
-
+            
                 <section class="product-info">
                     <h2 class="visual-hidden">Описание товара</h2>
                     <p class="product-availability">Есть в наличии</p>
                     <p class="product-article">Артикул: dexter-ae</p>
                     <p class="product-text">Travel Kit - необходимый аксесуар во время любого пуьешествяи. Travel Kit - необходимый аксесуар во время любого пуьешествяи. Travel Kit - необходимый аксесуар во время любого пуьешествяи. Travel Kit - необходимый аксесуар во время любого пуьешествяи. Travel Kit - необходимый аксесуар во время любого пуьешествяи. Travel Kit - необходимый аксесуар во время любого пуьешествяи.</p>
-                
+               
                
                 <p class="catalog-price">
                 <b>2 900 Руб.</b>
@@ -65,55 +68,60 @@
                     <li>Удобная кожанная косметичка</li>
                 </ul>
                 </section>
+            </div> 
+
         </main>
         <footer class="main-footer">
-                <p class="main-contacts">
-                    Барбершоп "БОРОДИНСКИЙ"<br>
-                    город Минск<br>
-                    ул. Лопатина 1     
-                </p>
-                <div class="social">
-                    <b>Давайте дружить!</b>
-                    <ul class="social-list">
-                        <li class="social-item"><a class="social-button" href="vk.com">Вконтакте</a></li>
-                        <li class="social-item"><a class="social-button" href="fb.com">Фейсбук</a></li>
-                        <li class="social-item"><a class="social-button" href="instagrm.com">Инстаграм</a></li>
-                    </ul>
-                </div>
-                <p class="copurights">
-                    <b>Разработано:</b>
-                    <a class="button" href="htmlacademy.ru">HTMLщики</a>
-                </p>
-            </footer>
-        <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p>Введите свой логин и пароль:</p>
-            <!--Здесь будет форма-->
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                    <label class="visually-hidden" for="user-login">Логин</label>
-                    <input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
-                </p>
-                <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="login-icon-password" type="password" name="login" placeholder="Пароль" id="user-password">
-                </p>
-                <p class="login-password-info">
-                    <label class="login-checkbox" for="login-password-info">
-                    <input class="visually-hidden" type="checkbox" name="remembeer" id="login-password-info">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-                <a class="restore" href="#">Я забыл пароль</a>
-                </p>
-                <button class="button" type="button">Войти</button>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
-        <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/map.jpg" width="780" height="560" alt="Офис компании находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
+            <div class="container">
+            <p class="footer-contacts">
+                Барбершоп "БОРОДИНСКИЙ"<br>
+                Адрес: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                <a href="map.html">Как нас найти?</a>     
+            </p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul class="social-list">
+                    <li class="social-item"><a class="social-button" href="vk.com">Вконтакте</a></li>
+                    <li class="social-item"><a class="social-button" href="fb.com">Фейсбук</a></li>
+                    <li class="social-item"><a class="social-button" href="instagrm.com">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a class="button" href="htmlacademy.ru">HTMLщики</a>
+            </p>
+            </div>
+        </footer>
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль:</p>
+        <!--Здесь будет форма-->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" type="text" name="login" placeholder="Логин" id="user-login">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" type="password" name="login" placeholder="Пароль" id="user-password">
+            </p>
+            <p class="login-password-info">
+                <label class="login-checkbox" for="login-password-info">
+                <input class="visually-hidden" type="checkbox" name="remembeer" id="login-password-info">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль</a>
+            </p>
+            <button class="button" type="button">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
 </body>
 </html>
