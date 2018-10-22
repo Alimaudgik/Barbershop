@@ -57,6 +57,29 @@ body {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -112,7 +135,8 @@ a {
 }
 
 .user-navigation {
-    width: 140px;
+    display: flex;
+    max-width: 140px;
 }
 
 .site-navigation,
@@ -124,6 +148,10 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+    display: block;
+    padding: 25px 20px;
+
+    vertical-align: middle;
     color: #ffffff;
 }
 
@@ -132,6 +160,33 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
     background-color: #242424;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.user-navigation .login-link::before {
+    content: "";
+
+    position: absolute;
+    top: 29px;
+    left: 24px;
+
+    width: 16px;
+    height: 18px;
+
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+.login-link:focus::before,
+.login-link:hover::before,
+.login-link:active::before {
+    opacity: 1;
 }
 
 .site-navigation-current {
@@ -157,8 +212,33 @@ a {
 }
 
 .feature-item h3 {
+position: relative;
+
+    margin: 0;
+    margin-bottom: 60px;
+    
     font-size: 30px;
     line-height: 42px;
+}
+
+.feature-item h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    
+    width: 20px;
+    height: 20px;
+
+    margin-left: -10px;
+
+    background-color: #f7f4f1;
+    
+    transform: rotate(45deg);
+}
+
+.feature-item p {
+    margin: 0 10px;
 }
 
 .index-columns {
@@ -171,7 +251,7 @@ a {
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("img/back-block.jpg");
+    background-image: url("../img/back-block.jpg");
     background-repeat: repeat;
     background-position: 0 0;
 }
@@ -222,7 +302,6 @@ a {
     margin: 0;
     padding: 0;
     margin-bottom: 38px;
-    height: 164px;
 }
 
 .button {
