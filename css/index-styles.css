@@ -251,16 +251,22 @@ position: relative;
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("../img/back-block.jpg");
-    background-repeat: repeat;
-    background-position: 0 0;
+    background-image: 
+        url("../img/vertical-line.png"),
+        url("../img/back-block.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center, 0 0;
+}
+
+.gallery-button-back {
+    margin-right: 20px;
 }
 
 .index-column h2 {
     font-size: 30px;
     line-height: 42px;
 }
-/*дописать код*/
+
 .news {
     width: 380px;
 
@@ -271,29 +277,48 @@ position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
+}
+
+
+.news h2 {
+    margin-bottom: 25px;
+}
+
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p {
+    margin: 0;
 }
 
 .news-list time {
     text-transform: none;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .gallery {
-    width: 300px;
+    width: 305px;
 
     min-height: 315px;
 }
 
 .contacts {
     width: 380px;
-
-    min-height: 285px
 }
 
-.appointment {
-    width: 300px;
+.contacts p {
+    margin: 0;
+    margin-bottom: 25px;
+}
 
-    min-height: 335px;
+
+.gallery-container {
+    position: relative; 
+
+    height: 260px;
 }
 
 .gallery-content {
@@ -301,10 +326,34 @@ position: relative;
     border: 7px solid #ffffff;
     margin: 0;
     padding: 0;
-    margin-bottom: 38px;
 }
 
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
+}
+
+
 .button {
+    display: inline-block;
+    padding: 10px 30px;
     font: inherit; 
 
     text-align: center;
@@ -321,10 +370,44 @@ position: relative;
     background-color: #663d15;
 }
 
+
+
+.appointment {
+    width: 300px;
+
+    min-height: 335px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 .appointment-item input {
     border: 2px solid #000000;
     font: inherit;
     background-color: transparent; 
+    box-sizing: border-box;
+    width: 140px;
+    padding: 8px 15px;
+}
+
+.appointment-item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
+}
+
+.appointment-form button {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .appointment-item input:focus {
@@ -374,6 +457,7 @@ position: relative;
 .footer-social ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
     margin: 0;
@@ -381,9 +465,25 @@ position: relative;
 }
 
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
     color: #ffffff;
     margin: 0;
     padding: 0;
+
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+.social-button:hover path,
+.social-button:focus path {
+    fill: #000000;
 }
 
 .footer-copyright {
@@ -394,9 +494,19 @@ position: relative;
     padding: 0;
 }
 
-.footer-copyright .button {
-    margin-top: 15px;
+.footer-copyright b {
+    margin-bottom: 15px;
 }
+.footer-copyright .button {
+    display: block;
+    margin-right: 0; 
+}
+/*
+.footer-copyright .button {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}*/
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
