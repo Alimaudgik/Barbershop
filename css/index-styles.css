@@ -326,11 +326,9 @@ position: relative;
     border: 7px solid #ffffff;
     margin: 0;
     padding: 0;
-}
-
-.gallery-content img {
     width: 286px;
     height: 164px;
+
 }
 
 .gallery-button {
