@@ -1184,3 +1184,6 @@ legend {
 .price-text {
     width: 400px;
 }
+.modal-show {
+    display: block;
+}

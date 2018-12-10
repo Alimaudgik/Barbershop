@@ -169,5 +169,23 @@
             <p><img src="img/map-short.jpg" width="766" height="560" alt="Офис компании находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
+
+        <script>
+        var link = document.querySelector(".login-link");
+        var popup = document.querySelector(".modal-login");
+        var close = document.querySelector(".modal-close")
+        
+        link.addEventListener("click", function(evt) {
+          evt.preventDefault();
+          popup.classList.add("modal-show");
+        });
+
+        close.addEventListener("click", function(evt) {
+          evt.preventDefault();
+          popup.classList.remove("modal-show");    
+        });
+        </script>
+
+
     </body>
 </html>
