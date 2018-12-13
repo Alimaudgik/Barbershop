@@ -1056,6 +1056,10 @@ legend {
     color: #663d15;
 }
 
+.login-form input::placeholder {
+    color: grey;
+}
+
 .restore {
     color: #000000;
     text-decoration: underline;
