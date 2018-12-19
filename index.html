@@ -83,7 +83,7 @@
                     Пн-Сб: 10:00-20:00 <br>
                     Воскр: 10:00-18:00
                 </p>
-                <a href="maps.html" class="button">Как проехать</a>
+                <a href="map.html" class="button contacts-button-map">Как проехать</a>
                 <a href="contacts.html" class="button">Обратная связь</a>
             </section>
             <section class="appointment">
@@ -96,7 +96,7 @@
                         <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
                     </p>
                     <p class="appointment-item">
-                        <label for="appointment-time">Время</label>
+                        <label for=" appointment-time">Время</label>
                         <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
                     </p>
                     <p class="appointment-item">
@@ -166,43 +166,13 @@
         </section>
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.4453584571743!2d27.673267715687953!3d53.95935868011207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc92e34e11955%3A0xa28eeacfca05f285!2z0YPQuy4g0JvQvtC_0LDRgtC40L3QsCAxLCDQmtC-0L_QuNGJ0LUsINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sus!4v1545246574599" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p><img src="img/map-short.jpg" width="766" height="560" alt="Офис компании находится по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
 
-        <script>
-        var link = document.querySelector(".login-link");
-        var popup = document.querySelector(".modal-login");
-        var close = document.querySelector(".modal-close");
-        var login = popup.querySelector("[name=login]");
-        var form = popup.querySelector("form");
-        var password = popup.querySelector("[name=password]")
-        
-        link.addEventListener("click", function (evt) { 
-          evt.preventDefault();
-          popup.classList.add("modal-show");
-          login.focus()
-        });
-
-        close.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popup.classList.remove("modal-show");    
-        });
-
-        form.addEventListener("submit", function (evt) {
-           if (!login.value || !password.value) {
-               evt.preventDefault();
-               console.log("Введите логин и пароль")
-           }
-           /*evt.preventDefault();
-           console.log(login.value);
-           console.log(password.value);*/
-        }); 
-
-        
-
-        </script>
-
+        <script src="js/popup.js"></script>
+        <script src="js/maps.js"></script>
 
     </body>
 </html>
